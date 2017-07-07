@@ -72,7 +72,8 @@ namespace Services
                     Latitud = itemEntity.Latitud,
                     Longitud = itemEntity.Longitud,
                     NombreUsuario = itemEntity.NombreUsuario,
-                    TipoItem = itemEntity.TipoItem
+                    TipoItem = itemEntity.TipoItem,
+                    Estado = itemEntity.Estado
                 };
                 _unitOfWork.ItemRepository.Insert(item);
                 _unitOfWork.Save();
@@ -102,6 +103,7 @@ namespace Services
                         item.Longitud = itemEntity.Longitud;
                         item.NombreUsuario = itemEntity.NombreUsuario;
                         item.TipoItem = itemEntity.TipoItem;
+                        item.Estado = itemEntity.Estado;
 
                         _unitOfWork.ItemRepository.Update(item);
                         _unitOfWork.Save();

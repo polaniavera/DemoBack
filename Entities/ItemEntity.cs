@@ -14,5 +14,6 @@ namespace Entities
         public Nullable<decimal> Latitud { get; set; }
         public Nullable<decimal> Longitud { get; set; }
         public string Informacion { get; set; }
+        public Nullable<bool> Estado { get; set; }
     }
 }

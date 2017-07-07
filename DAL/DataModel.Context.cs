@@ -18,7 +18,6 @@ namespace DAL
         public DemoDbEntities()
             : base("name=DemoDbEntities")
         {
-            base.Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
